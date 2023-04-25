@@ -21,7 +21,7 @@ export default function Experience() {
 
 
   return (
-    <div className="w-full flex justify-center my-20">
+    <div id="experience" className="w-full flex justify-center my-20">
       <div className="flex justify-center w-1/2 flex-col gap-4 sm:w-[100%] md:w-[100%]">
         <div className="flex flex-col mr-auto">
           <div className="font-bold text-[27px]">Experience</div>

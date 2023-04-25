@@ -2,15 +2,29 @@ import { useState } from "react";
 
 export default function Navigation() {
   const [dropdownVisible, setDropdownVisible] = useState(false);
+  const scrollToAbout = () => {
+    document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+  };
 
+  const scrollToExperience = () => {
+    document.getElementById("experience").scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToProject = () => {
+    document.getElementById("project").scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToContact = () => {
+    document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div className="w-full flex justify-center h-[80px] items-center">
       <div className="flex justify-between items-center w-1/2 sm:w-[100%] md:w-[100%]">
         <ul className="visible flex gap-4 md:visible sm:hidden">
-          <li>About</li>
-          <li>Experience</li>
-          <li>Project</li>
-          <li>Contact</li>
+          <li className="hover:cursor-pointer" onClick={scrollToAbout}>About</li>
+          <li className="hover:cursor-pointer" onClick={scrollToExperience}>Experience</li>
+          <li className="hover:cursor-pointer" onClick={scrollToProject}>Projects</li>
+          <li className="hover:cursor-pointer" onClick={scrollToContact}>Contact</li>
         </ul>
 
         <div
@@ -34,16 +48,16 @@ export default function Navigation() {
 
         {dropdownVisible && (
           <ul className="bg-gray-200 absolute top-14 rounded-md flex flex-col justify-center p-4 dark:bg-gray-800 dark:border-gray-700 dark:border-[1px]">
-            <li className="text-[20px] hover:bg-gray-100 w-full p-1 rounded-md transition-smooth dark:hover:bg-gray-700">
+            <li className="text-[20px] hover:bg-gray-100 w-full p-1 rounded-md transition-smooth dark:hover:bg-gray-700" onClick={scrollToAbout}>
               About
             </li>
-            <li className="text-[20px] hover:bg-gray-100 w-full p-1 rounded-md transition-smooth dark:hover:bg-gray-700">
+            <li className="text-[20px] hover:bg-gray-100 w-full p-1 rounded-md transition-smooth dark:hover:bg-gray-700" onClick={scrollToExperience}>
               Experience
             </li>
-            <li className="text-[20px] hover:bg-gray-100 w-full p-1 rounded-md transition-smooth dark:hover:bg-gray-700">
-              Project
+            <li className="text-[20px] hover:bg-gray-100 w-full p-1 rounded-md transition-smooth dark:hover:bg-gray-700" onClick={scrollToProject}>
+              Projects
             </li>
-            <li className="text-[20px] hover:bg-gray-100 w-full p-1 rounded-md transition-smooth dark:hover:bg-gray-700">
+            <li className="text-[20px] hover:bg-gray-100 w-full p-1 rounded-md transition-smooth dark:hover:bg-gray-700" onClick={scrollToContact}>
               Contact
             </li>
           </ul>
