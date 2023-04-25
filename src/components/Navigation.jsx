@@ -31,19 +31,13 @@ export default function Navigation() {
           className=" invisible sm:visible "
           onClick={() => setDropdownVisible(!dropdownVisible)}
         >
-          <svg
-            width="35"
-            height="35"
-            className="fill-slate-900 bg-gray-200 rounded-md p-2 sm:ml-auto"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M24 3.15H0v-1.5h24v1.5Zm0 6.4H0v-1.5h24v1.5Zm0 6.4H0v-1.5h24v1.5Zm0 6.4H0v-1.5h24v1.5Z"
-              clip-rule="evenodd"
-            ></path>
+          <svg width={35} height={35} className="fill-slate-900 bg-gray-200 rounded-md p-2 sm:ml-auto" stroke="#454545" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} viewBox="0 0 24 24">
+            <path d="M4 12h16" />
+            <path d="M4 6h16" />
+            <path d="M4 18h16" />
           </svg>
+
+
         </div>
 
         {dropdownVisible && (

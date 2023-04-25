@@ -4,8 +4,7 @@ export default {
   theme: {
     extend: {},
     fontFamily: {
-      koulen: ["Koulen", "cursive"],
-      poppins: ["Poppins", "sans-serif"],
+      pt: ["PT Sans", "sans-serif"],
     },
     screens: {
       xl: { max: "1279px" },
