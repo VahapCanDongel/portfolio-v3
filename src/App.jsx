@@ -8,7 +8,7 @@ import Navigation from "./components/Navigation";
 function App() {
   return (
 
-    <div className="p-4 flex h-screen w-full flex-col antialiased">
+    <div className="p-4 flex h-screen w-full flex-col antialiased smooth-font">
       <Navigation />
       <Hero />
       <FeaturedWork />

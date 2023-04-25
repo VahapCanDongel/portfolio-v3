@@ -48,7 +48,10 @@
     
   }
 
-  
+  .smooth-font {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
 }
 
 body {
