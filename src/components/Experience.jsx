@@ -15,7 +15,7 @@ export default function Experience() {
   const developer_responsibilities = [
     'Consulting with client to assess their web development needs and gather specifications, designs for new website.',
     'Efficiently manage the entire project life cycle, from design, to deployment.',
-    'Continuously maintaining the website by updating and adding content.    '
+    'Continuously maintaining the website by updating and adding content using technologies such as React JS & Tailwind CSS'
   ]
 
 
