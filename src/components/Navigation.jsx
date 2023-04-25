@@ -1,30 +1,66 @@
+import { useState } from "react";
+
 export default function Navigation() {
+  const [dropdownVisible, setDropdownVisible] = useState(false);
+
   return (
     <div className="w-full flex justify-center h-[80px] items-center">
-      <div className="flex justify-between w-1/2">
-        <ul className="flex gap-4">
+      <div className="flex justify-between items-center w-1/2">
+        <ul className="invisible flex gap-4 md:visible lg:visible">
           <li>About</li>
           <li>Experience</li>
           <li>Project</li>
           <li>Contact</li>
         </ul>
-     
+
+        <div
+          className="visible sm:visible lg:in"
+          onClick={() => setDropdownVisible(!dropdownVisible)}
+        >
+          <svg
+            width="35"
+            height="35"
+            className="fill-slate-900 bg-gray-200 rounded-md p-2 sm:ml-auto"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M24 3.15H0v-1.5h24v1.5Zm0 6.4H0v-1.5h24v1.5Zm0 6.4H0v-1.5h24v1.5Zm0 6.4H0v-1.5h24v1.5Z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </div>
+
+        {dropdownVisible && (
+          <ul className="bg-gray-200 absolute top-14 rounded-md flex flex-col justify-center p-4 ">
+            <li className="text-[20px] hover:bg-gray-100 w-full p-1 rounded-md transition-smooth">
+              About
+            </li>
+            <li className="text-[20px] hover:bg-gray-100 w-full p-1 rounded-md transition-smooth">
+              Experience
+            </li>
+            <li className="text-[20px] hover:bg-gray-100 w-full p-1 rounded-md transition-smooth">
+              Project
+            </li>
+            <li className="text-[20px] hover:bg-gray-100 w-full p-1 rounded-md transition-smooth">
+              Contact
+            </li>
+          </ul>
+        )}
+
         <svg
           width="35"
           height="35"
-            className="fill-slate-900 bg-gray-200 rounded-md p-2"
+          className="fill-slate-900 bg-gray-200 rounded-md p-2 sm:ml-auto"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <path d="M12.8 3.199V0h-1.6v3.199h1.6Z"></path>
-          <path d="M5.131 3.997 2.4 1.267 1.269 2.4 4 5.13l1.131-1.132Z"></path>
-          <path d="m20 5.13 2.73-2.73-1.13-1.132-2.732 2.73 1.13 1.131Z"></path>
-          <path d="M12 6.396a5.598 5.598 0 1 0 0 11.194 5.598 5.598 0 1 0 0-11.194Z"></path>
-          <path d="M3.2 11.193H0v1.6h3.2v-1.6Z"></path>
-          <path d="M24 11.193h-3.2v1.6H24v-1.6Z"></path>
-          <path d="m2.4 22.718 2.731-2.73-1.13-1.132-2.732 2.73 1.13 1.132Z"></path>
-          <path d="M22.731 21.586 20 18.856l-1.131 1.132 2.731 2.73 1.131-1.132Z"></path>
-          <path d="M12.8 23.985v-3.199h-1.6v3.2h1.6Z"></path>
+          <path
+            fill-rule="evenodd"
+            d="M1.6 2.4A2.4 2.4 0 0 1 4 0h13.131L22.4 5.269V21.6A2.4 2.4 0 0 1 20 24H4a2.4 2.4 0 0 1-2.4-2.4V2.4Zm4.8 3.995 8 .006V8l-8-.006v-1.6Zm11.2 4.798H6.4v1.6h11.2v-1.6Zm0 4.808-11.2-.012v1.6l11.2.012V16Z"
+            clip-rule="evenodd"
+          ></path>
         </svg>
       </div>
     </div>
