@@ -62,20 +62,23 @@ export default function Navigation() {
             </li>
           </ul>
         )}
+        <a href="\src\assets\cv.pdf" target="_blank">
+          <svg
+            width="35"
+            height="35"
+            className="fill-slate-900 bg-gray-200 rounded-md p-2 sm:ml-auto"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
 
-        <svg
-          width="35"
-          height="35"
-          className="fill-slate-900 bg-gray-200 rounded-md p-2 sm:ml-auto"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M1.6 2.4A2.4 2.4 0 0 1 4 0h13.131L22.4 5.269V21.6A2.4 2.4 0 0 1 20 24H4a2.4 2.4 0 0 1-2.4-2.4V2.4Zm4.8 3.995 8 .006V8l-8-.006v-1.6Zm11.2 4.798H6.4v1.6h11.2v-1.6Zm0 4.808-11.2-.012v1.6l11.2.012V16Z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1.6 2.4A2.4 2.4 0 0 1 4 0h13.131L22.4 5.269V21.6A2.4 2.4 0 0 1 20 24H4a2.4 2.4 0 0 1-2.4-2.4V2.4Zm4.8 3.995 8 .006V8l-8-.006v-1.6Zm11.2 4.798H6.4v1.6h11.2v-1.6Zm0 4.808-11.2-.012v1.6l11.2.012V16Z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </a>
+
       </div>
     </div>
   );
