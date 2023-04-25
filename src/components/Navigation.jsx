@@ -5,8 +5,8 @@ export default function Navigation() {
 
   return (
     <div className="w-full flex justify-center h-[80px] items-center">
-      <div className="flex justify-between items-center w-1/2">
-        <ul className="invisible flex gap-4 md:visible lg:visible">
+      <div className="flex justify-between items-center w-1/2 sm:w-[100%] md:w-[100%]">
+        <ul className="visible flex gap-4 md:visible sm:hidden">
           <li>About</li>
           <li>Experience</li>
           <li>Project</li>
@@ -14,7 +14,7 @@ export default function Navigation() {
         </ul>
 
         <div
-          className="visible sm:visible lg:in"
+          className=" invisible sm:visible "
           onClick={() => setDropdownVisible(!dropdownVisible)}
         >
           <svg
@@ -33,17 +33,17 @@ export default function Navigation() {
         </div>
 
         {dropdownVisible && (
-          <ul className="bg-gray-200 absolute top-14 rounded-md flex flex-col justify-center p-4 ">
-            <li className="text-[20px] hover:bg-gray-100 w-full p-1 rounded-md transition-smooth">
+          <ul className="bg-gray-200 absolute top-14 rounded-md flex flex-col justify-center p-4 dark:bg-gray-800 dark:border-gray-700 dark:border-[1px]">
+            <li className="text-[20px] hover:bg-gray-100 w-full p-1 rounded-md transition-smooth dark:hover:bg-gray-700">
               About
             </li>
-            <li className="text-[20px] hover:bg-gray-100 w-full p-1 rounded-md transition-smooth">
+            <li className="text-[20px] hover:bg-gray-100 w-full p-1 rounded-md transition-smooth dark:hover:bg-gray-700">
               Experience
             </li>
-            <li className="text-[20px] hover:bg-gray-100 w-full p-1 rounded-md transition-smooth">
+            <li className="text-[20px] hover:bg-gray-100 w-full p-1 rounded-md transition-smooth dark:hover:bg-gray-700">
               Project
             </li>
-            <li className="text-[20px] hover:bg-gray-100 w-full p-1 rounded-md transition-smooth">
+            <li className="text-[20px] hover:bg-gray-100 w-full p-1 rounded-md transition-smooth dark:hover:bg-gray-700">
               Contact
             </li>
           </ul>

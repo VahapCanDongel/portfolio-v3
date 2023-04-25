@@ -1,12 +1,12 @@
 export default function Footer() {
   return (
     <div className="w-full flex justify-center my-20">
-      <div className="flex justify-center items-center w-1/2 flex-col gap-4">
+      <div className="flex justify-center items-center w-1/2 flex-col gap-4 sm:w-[100%] md:w-[100%]">
         <div className="flex gap-4">
           <svg
             width="30"
             height="30"
-            fill="#000000"
+            className="dark:fill-white"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -20,7 +20,7 @@ export default function Footer() {
           <svg
             width="30"
             height="30"
-            fill="#000000"
+            className="dark:fill-white"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -31,10 +31,10 @@ export default function Footer() {
             ></path>
           </svg>
         </div>
-        
 
-        <div className="text-gray-600 mb-4">
-            Built with React JS, Tailwind CSS
+
+        <div className="text-gray-600 mb-4 dark:text-gray-500">
+          Built with React JS, Tailwind CSS
         </div>
       </div>
     </div>

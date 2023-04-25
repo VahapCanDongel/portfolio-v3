@@ -22,15 +22,15 @@ export default function Experience() {
 
   return (
     <div className="w-full flex justify-center my-20">
-      <div className="flex justify-center w-1/2 flex-col gap-4">
+      <div className="flex justify-center w-1/2 flex-col gap-4 sm:w-[100%] md:w-[100%]">
         <div className="flex flex-col mr-auto">
           <div className="font-bold text-[27px]">Experience</div>
         </div>
 
-        <ExperienceCard jobTitle={'Lecturer in Computing'} duration={'August 2021 - Current'} company={'College of Haringey, Enfield and Northeast London'} responsibilities={teaching_responsibilities}/>
-     
-        <ExperienceCard jobTitle={'Web Developer'} duration={'November 2022 - Current'} company={'Yeliz Limited'} responsibilities={developer_responsibilities} liveLink={true} link={'http://www.yelizltd.co.uk'}/>
-     
+        <ExperienceCard jobTitle={'Lecturer in Computing'} duration={'August 2021 - Current'} company={'College of Haringey, Enfield and Northeast London'} responsibilities={teaching_responsibilities} />
+
+        <ExperienceCard jobTitle={'Web Developer'} duration={'November 2022 - Current'} company={'Yeliz Limited'} responsibilities={developer_responsibilities} liveLink={true} link={'http://www.yelizltd.co.uk'} />
+
       </div>
     </div>
   );

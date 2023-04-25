@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <div className="w-full flex justify-center my-20">
-      <div className="flex justify-center w-1/2 flex-col">
+      <div className="flex justify-center w-1/2 flex-col sm:w-[100%] md:w-[100%]">
         <div className="flex flex-col mr-auto">
           <div className="font-bold text-[40px]">Vahap Can Dongel</div>
           <div>Front-end Developer / Lecturer in Computing</div>
