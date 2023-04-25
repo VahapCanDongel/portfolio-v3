@@ -1,3 +1,4 @@
+import Experience from "./components/Experience";
 import FeaturedWork from "./components/FeaturedWork";
 import Hero from "./components/Hero";
 import Navigation from "./components/Navigation";
@@ -9,7 +10,7 @@ function App() {
         <Navigation/>
         <Hero/>
         <FeaturedWork/>
-
+        <Experience/>
  
 
       </div>
