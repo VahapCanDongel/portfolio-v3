@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .transition-smooth {
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .transition-smooth:hover {
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+  }
+
+  @keyframes move-forward {
+    0% {
+      transform: translateY(0);
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -o-transform: translateY(0);
+    }
+
+    100% {
+      transform: translateY(-5px);
+      -webkit-transform: translateY(-5px);
+      -moz-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+      -o-transform: translateY(-5px);
+
+    }
+  }
+
+  .move-forward-effect {
+    transition: transform 0.3s ease-in-out;
+    
+
+  }
+
+  .move-forward-effect:hover {
+    
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+    
+  }
+}
+
+body {
+  @apply dark:bg-zinc-900 dark:text-zinc-50 bg-zinc-50 text-zinc-900 antialiased;
+}
