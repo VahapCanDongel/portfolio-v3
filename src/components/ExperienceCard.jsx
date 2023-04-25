@@ -3,6 +3,8 @@ export default function ExperienceCard({
   jobTitle,
   duration,
   responsibilities = [],
+  liveLink=false,
+  link
 }) {
   return (
     <div className="border-t-black border-t-[1px] border-b-black border-b-[1px] w-full min-h-[200px] my-2 p-8 transition-smooth move-forward-effect  ">
@@ -21,6 +23,14 @@ export default function ExperienceCard({
           </li>
         ))}
       </ul>
+
+      {liveLink && (
+        <a href={link} className="bg-gray-300 rouned-md w-[100px] p-2 rounded-md mt-2 flex justify-center items-center">
+          Live
+        </a>
+      )
+
+      }
     </div>
   );
 }

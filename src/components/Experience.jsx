@@ -29,7 +29,7 @@ export default function Experience() {
 
         <ExperienceCard jobTitle={'Lecturer in Computing'} duration={'August 2021 - Current'} company={'College of Haringey, Enfield and Northeast London'} responsibilities={teaching_responsibilities}/>
      
-        <ExperienceCard jobTitle={'Web Developer'} duration={'November 2022 - Current'} company={'Yeliz Limited'} responsibilities={developer_responsibilities}/>
+        <ExperienceCard jobTitle={'Web Developer'} duration={'November 2022 - Current'} company={'Yeliz Limited'} responsibilities={developer_responsibilities} liveLink={true} link={'http://www.yelizltd.co.uk'}/>
      
       </div>
     </div>

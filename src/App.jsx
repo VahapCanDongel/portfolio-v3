@@ -1,5 +1,7 @@
+import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 import FeaturedWork from "./components/FeaturedWork";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navigation from "./components/Navigation";
 
@@ -11,8 +13,8 @@ function App() {
         <Hero/>
         <FeaturedWork/>
         <Experience/>
- 
-
+        <Contact/>
+        <Footer/>
       </div>
 
   );
