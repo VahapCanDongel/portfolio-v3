@@ -27,6 +27,16 @@ export default function FeaturedWork() {
           githubLink={"https://github.com/VahapCanDongel/vlearn-2"}
           liveLink={"https://vlearn-2.vercel.app/login"}
         />
+
+        <FeaturedWorkCard
+          technologies={["React JS", "Tailwind CSS", "Zustand"]}
+          projectName={"ShushiShop"}
+          projectDescription={
+            "This sushi website is a personal project created to practice and showcase frontend development skills and design techniques. The website features a visually appealing and responsive design, optimized for various devices and screen sizes. Users can browse through a diverse selection of sushi dishes, view detailed descriptions, and add items to their cart for a seamless online ordering experience."
+          }
+          githubLink={"https://github.com/VahapCanDongel/shuishop/"}
+          liveLink={"https://shuishop.vercel.app/"}
+        />
       </div>
     </div>
   );
