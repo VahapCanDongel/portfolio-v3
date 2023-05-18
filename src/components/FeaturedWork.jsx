@@ -8,6 +8,15 @@ export default function FeaturedWork() {
           <div className="font-bold text-[27px]">Featured Work</div>
         </div>
 
+        <FeaturedWorkCard
+          technologies={["React JS", "Tailwind CSS"]}
+          projectName={"Car Hire"}
+          projectDescription={
+            "This website boasts an attractive and responsive interface, ensuring an optimal viewing experience across a multitude of devices and screen sizes. Users are presented with an extensive range of vehicle options, each accompanied by comprehensive specifications and details. The platform further enhances user experience through a straightforward booking process, where customers can easily choose their preferred vehicle, set rental duration, and complete the reservation. The Car Hire website offers a seamless and intuitive car rental experience, highlighting my ability to create practical, user-centered digital solutions."
+          }
+          githubLink={"https://github.com/VahapCanDongel/car-hire"}
+          liveLink={"https://car-hire-nine.vercel.app/"}
+        />
 
         <FeaturedWorkCard
           technologies={["React JS", "Tailwind CSS", "Zustand"]}
