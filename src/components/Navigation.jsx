@@ -56,7 +56,7 @@ export default function Navigation() {
             </li>
           </ul>
         )}
-        <a href="\src\assets\cv.pdf" target="_blank">
+        <a href="public\VCD_CV.pdf" target="_blank">
           <svg
             width="35"
             height="35"
