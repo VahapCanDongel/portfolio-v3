@@ -38,17 +38,6 @@ export default function FeaturedWork() {
           liveLink={"https://prompt-engineer.vercel.app/"}
         />
 
-        <FeaturedWorkCard
-          technologies={["Next JS", "Tailwind CSS", "Supabase"]}
-          projectName={"Linkteacher"}
-          projectDescription={
-            "A comprehensive web application designed specifically for teachers to share and distribute lesson materials on a digital board. The platform allows teachers to upload various types of content, such as videos, documents, and images, which can be viewed by learners in designated subjects"
-          }
-          githubLink={"https://github.com/VahapCanDongel/vlearn-2"}
-          liveLink={"https://vlearn-2.vercel.app/login"}
-        />
-
-
       </div>
     </div>
   );

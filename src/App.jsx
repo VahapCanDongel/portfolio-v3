@@ -11,8 +11,8 @@ function App() {
     <div className="p-4 flex h-screen w-full flex-col antialiased smooth-font">
       <Navigation />
       <Hero />
-      <FeaturedWork />
       <Experience />
+      <FeaturedWork />
       <Contact />
       <Footer />
     </div>
