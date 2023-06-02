@@ -56,7 +56,7 @@ export default function Navigation() {
             </li>
           </ul>
         )}
-        <a href="public\VCD_CV.pdf" target="_blank">
+        <a href="https://profile.indeed.com/p/vahapcand-6xvbt70" target="_blank">
           <svg
             width="35"
             height="35"
