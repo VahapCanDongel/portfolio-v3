@@ -10,20 +10,22 @@ export default function Experience() {
     "Comprehensive UI component testing with Jest.",
   ];
 
-  // const colelge_dev_projects = {
-  //   title: "Interactive Learning Tools",
-  //   project_resp: [
-  //     'A comprehensive web application designed specifically for teachers to share and distribute lesson materials on a digital board. The platform allows teachers to upload various types of content, such as videos, documents, and images, which can be viewed by learners in designated subjects.',
-  //     'Next.js for development of RESTful web services and middleware configurations.',
-  //     'Applied full-stack web development with integrating authentication system',
-  //     'Worked on building an intuitive and seamless user interface using React JS, Tailwind CSS and Daisy UI.',
-  //     'Comprehensive UI component testing with Jest.',
-  //     'Implemented efficient state management, handling complex state logic across multiple components.',
-  //     ' Integrated ORM with a PostgreSQL database, efficiently managing complex queries.'
-  //   ]
+  const yeliz_tailoring = [
+    "Developed Stock Management System",
+    "Designed and implemented a comprehensive stock management system utilizing my skills in JavaScript (ES6, ES7), React.js, Next.js, and Node.js.",
+    "Created an intuitive user interface with Tailwind CSS, Material UI, HTML5, and CSS3, improving usability and ensuring effective inventory tracking.",
+    "Implemented robust backend services using Node.js and Next.js, coupled with Azure for seamless data management and real-time inventory updates.",
+    "Utilised MySQL for database management, ensuring efficient and secure storage and retrieval of inventory information.",
+    "The system's success in improving operational efficiency and reducing manual labour emphasizes my ability to offer practical software solutions that meet business needs."
+  ]
 
-  // }
-
+  const millenium_responsibilities = [
+    "Food Ordering Platform",
+    "Developed a dynamic food ordering platform using TypeScript, React.js, Next.js, and Supabase for backend services.",
+    "Leveraged Tailwind CSS, Daisy UI, Recharts, HTML5, and CSS3 to design an engaging and responsive user interface, facilitating a seamless online ordering experience for customers.",
+    "Incorporated PostgreSQL for secure and efficient management of food items, order data, and customer information.",
+    "The success of the platform in enhancing the client's online presence and boosting sales stands as a testament to my expertise in web development and my ability to leverage technology to drive business growth."
+  ]
 
   return (
     <div id="experience" className="w-full flex justify-center my-20">
@@ -31,10 +33,9 @@ export default function Experience() {
         <div className="flex flex-col mr-auto">
           <div className="font-bold text-[27px]">Experience</div>
         </div>
-
         <ExperienceCard jobTitle={'Teacher in Full Stack Development'} duration={'August 2021 - June 2023'} company={'College of Haringey, Enfield and Northeast London'} responsibilities={college_dev_responsibilities} />
-
-
+        <ExperienceCard jobTitle={'Freelance Developer'} duration={'November 2022 - May 2023'} company={'Yeliz Tailoring'} responsibilities={yeliz_tailoring} />
+        <ExperienceCard jobTitle={'Freelance Developer'} duration={'May 2022 - August 2022'} company={'Millenium Takeaway'} responsibilities={millenium_responsibilities} />
       </div>
     </div>
   );
