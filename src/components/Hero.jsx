@@ -8,7 +8,7 @@ export default function Hero() {
         </div>
 
         <p className="mt-4">
-          Enthusiastic and solutions-oriented Full Stack Developer with
+          Enthusiastic and solutions-oriented Teacher in Full Stack Development  with
           hands-on experience in designing, developing, and implementing
           user-centred web applications. Proficient in a diverse range of
           technologies including <span className="font-bold italic">JavaScript, React JS, Next JS, Node JS,

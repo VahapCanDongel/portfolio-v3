@@ -24,6 +24,22 @@ export default function ExperienceCard({
         ))}
       </ul>
 
+      <ul className="list-disc">
+        {/* {projects.map((project, index) => (
+          <div>
+            {project.title}
+
+            <li className="">
+              {project_resp.map((pro, index) => (
+                { prop }
+              ))}
+            </li>
+          </div>
+
+
+        ))} */}
+      </ul>
+
       {liveLink && (
         <a href={link} className="bg-gray-300 rouned-md w-[100px] p-2 rounded-md mt-2 flex justify-center items-center dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-800">
           Live
